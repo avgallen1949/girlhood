@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "General Sans Semibold";
+    src: url(./GeneralSans-Semibold.otf);
+}
+
+@font-face {
+    font-family: "General Sans";
+    src: url(./GeneralSans-Medium.otf);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+
+html {
+    background-color: #f4f4f4;
+}
+
+div {
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color:#f252ff;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color:#f252ff;
+}
+
+p {
+    font-size: 20px;
+    color: #f252ff;
+    text-align: center;
+    font-family: "General Sans"
+}
+
+#prompts {
+    font-size: 30px;
+    font-family: "General Sans Semibold";
+}
+
+.dot1 {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .dot2 {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .dot3 {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .dot4 {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  ::-webkit-scrollbar-track {
+    color: #f252ff;
+  }
+
+  hr {
+    border: 1px #f252ff solid;
+    }
+
+  /* smartphone */
+@media only screen and (max-width: 480px), (orientation: portrait) {
+    div {
+        width: 70%;
+        margin:auto;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+  
+  
+  }
