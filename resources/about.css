@@ -8,6 +8,11 @@
     src: url(./GeneralSans-Medium.otf);
 }
 
+@font-face {
+    font-family: "Lithic";
+    src: url(./Lithic.otf);
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -43,7 +48,9 @@ html {
 .right {
     height: 90vh;
     overflow: scroll;
-    padding-right: 1rem;
+    padding-right: 2rem;
+    scroll-behavior: smooth;
+    scrollbar-color: #f252ff;
 }
 
 a {
@@ -61,13 +68,13 @@ a:visited {
 }
 
 .quote {
-    text-transform: uppercase;
-    font-family: "General Sans Semibold", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: "Lithic", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color:#f252ff;
 }
 
 .italic {
-    font-style: italic;
+    text-transform: uppercase;
     font-size: 1rem;
 }
 

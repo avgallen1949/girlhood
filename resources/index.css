@@ -199,7 +199,7 @@ section::before {
 }
 
 section:hover::before {
-  opacity: 0.1;
+  opacity: .1;
   border-radius: 0.5rem;
 }
 
