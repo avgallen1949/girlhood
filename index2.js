@@ -1,3 +1,11 @@
+$(document).on("mousemove", function (e) {
+  var cursor = $(".cursor");
+  cursor.attr(
+    "style",
+    "top:" + (e.pageY - 15) + "px; left:" + (e.pageX - 15) + "px;"
+  );
+});
+
 
 var SPREADSHEET_ID = "1MqhornBHjwSbeYdoSbOt2vGF8cZijsfX8dMwE4iVERQ";
 var TAB_NAME = "Sheet1";
@@ -19,6 +27,7 @@ $(document).ready(function () {
             <p>` + entry.question1 + `</p>
             <p>` + entry.question2 + `</p>
             <p>` + entry.question3 + `</p>
+            <p>` + entry.time + `</p>
          </section>`)
         .appendTo(".grid");
     });
