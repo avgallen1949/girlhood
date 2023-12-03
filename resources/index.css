@@ -18,6 +18,7 @@ html {
     height: auto;
     object-fit: cover;
     display: relative;
+    margin-bottom: 1rem;
 }
 
 .title {
