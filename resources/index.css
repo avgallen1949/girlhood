@@ -156,20 +156,31 @@ a:hover {
   color:#f252ff;
 }
 
+.cursor {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #f252ff;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+  z-index: 3;
+}
+
 
 /* hover animation */
-.element>section {
-    background-color: #9999;
-    color: #fff;
-}
+
 .element:hover section{ 
-    opacity: 10%;
+    opacity: 5%;
 }
 
 section {
   position: relative;
   display: inline-block;
-  background: #f4f4f4;
   display: inline-block;
   border-radius: 0.5rem;
   z-index: 1;
@@ -188,7 +199,7 @@ section::before {
 }
 
 section:hover::before {
-  opacity: 0.2;
+  opacity: 0.1;
   border-radius: 0.5rem;
 }
 
@@ -213,7 +224,7 @@ section:hover::before {
     top: 0;
   }
 
-    .grid {
+  .grid {
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);

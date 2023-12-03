@@ -22,10 +22,28 @@ html {
     background-color: #f4f4f4;
 }
 
-div {
-    width: 50%;
-    margin: auto;
-    margin-top: 5rem;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem;
+    gap: 20px 60px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    grid-auto-flow: row;
+}
+
+.left {
+    overflow: hidden;
+    height: 90vh;
+    border-right: 1px solid #f252ff;
+    padding-right: 1rem;
+}
+
+.right {
+    height: 90vh;
+    overflow: scroll;
+    padding-right: 1rem;
 }
 
 a {
@@ -42,16 +60,66 @@ a:visited {
     color:#f252ff;
 }
 
+.quote {
+    text-transform: uppercase;
+    font-family: "General Sans Semibold", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+button {
+    text-decoration: none;
+    color: #f252ff;
+    border: 1px #f252ff solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #f4f4f4;
+    z-index: 1;
+    transition: .3s ease-in-out;
+    font-family: "General Sans Semibold", sans-serif;
+}
+
+button:hover {
+    color:#f4f4f4;
+    cursor: pointer;
+    background-color: #f252ff;
+}
+
 p {
     font-size: 20px;
     color: #f252ff;
-    text-align: center;
+    text-align: left;
     font-family: "General Sans"
+}
+
+.black {
+    color: black;
+}
+
+.pink {
+    color: #f252ff;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 #prompts {
     font-size: 30px;
     font-family: "General Sans Semibold";
+    color: black;
+}
+
+hr {
+    border: .5px solid #f252ff;
+}
+
+img {
+    height: 20rem;
+    width: auto;
+    margin: auto;
 }
 
 .dot1 {
@@ -98,22 +166,44 @@ p {
     z-index: 2;
   }
 
+  .cursor {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f252ff;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    transition: all 0.1s ease-out;
+    pointer-events: none;
+  }
+
   ::-webkit-scrollbar-track {
     color: #f252ff;
   }
 
-  hr {
-    border: 1px #f252ff solid;
-    }
 
   /* smartphone */
-@media only screen and (max-width: 480px), (orientation: portrait) {
-    div {
-        width: 70%;
-        margin:auto;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+@media only screen and (max-width: 500px), (orientation: portrait) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85vw;
+    }
+
+    .right {
+        overflow: visible;
+        padding-bottom: 2rem;
     }
   
+    .left {
+        height: auto;
+        border-bottom: 1px #f252ff solid;
+        border-right: 0px;
+        padding-bottom: 2rem;
+    }
   
   }
