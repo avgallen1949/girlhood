@@ -19,6 +19,7 @@ html {
     object-fit: cover;
     display: relative;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .title {
