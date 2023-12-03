@@ -208,7 +208,7 @@ section:hover::before {
 }
 
 /* smartphone */
-@media only screen and (max-width: 480px), (orientation: portrait) {
+@media only screen and (max-width: 500px), (orientation: portrait) {
   .about {
     text-align: center;
     width: 30%;
@@ -231,6 +231,10 @@ section:hover::before {
     grid-gap: 1rem;
     width: 90%;
     margin: auto;
+  }
+
+  .cursor {
+    display: none;
   }
 
 }

@@ -205,5 +205,9 @@ img {
         border-right: 0px;
         padding-bottom: 2rem;
     }
+
+    .cursor {
+        display: none;
+    }
   
   }
