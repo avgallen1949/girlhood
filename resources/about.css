@@ -50,7 +50,6 @@ html {
     overflow: scroll;
     padding-right: 2rem;
     scroll-behavior: smooth;
-    scrollbar-color: #f252ff;
 }
 
 a {
@@ -121,6 +120,10 @@ p {
 
 hr {
     border: .5px solid #f252ff;
+}
+
+.arrow {
+    color:#f252ff;
 }
 
 img {
@@ -203,6 +206,7 @@ img {
 
     .right {
         overflow: visible;
+        height: auto;
         padding-bottom: 2rem;
     }
   
@@ -216,5 +220,9 @@ img {
     .cursor {
         display: none;
     }
+
+    .arrow {
+        display: none;
+    };
   
   }
