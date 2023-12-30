@@ -30,7 +30,7 @@ html {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     margin: 2rem;
     gap: 20px 60px;
     margin-top: 3rem;
@@ -69,6 +69,12 @@ a:visited {
 .quote {
     font-family: "Lithic", Arial, Helvetica, sans-serif;
     font-size: 2rem;
+    color:#f252ff;
+}
+
+.quote2 {
+    font-family: "Lithic", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
     color:#f252ff;
 }
 
@@ -113,9 +119,10 @@ p {
 }
 
 #prompts {
-    font-size: 30px;
-    font-family: "General Sans Semibold";
+    font-size: 1.5rem;
+    font-family: "General Sans Medium";
     color: black;
+    padding-right: 1rem;
 }
 
 hr {
