@@ -22,6 +22,7 @@ html {
     margin-top: 1rem;
 }
 
+
 .title {
     display: flex;
     justify-content: center;
@@ -168,7 +169,6 @@ a:hover {
   top: 0;
   left: 0;
   mix-blend-mode: multiply;
-  transition: all 0.1s ease-out;
   pointer-events: none;
   z-index: 3;
 }
