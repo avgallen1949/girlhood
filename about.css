@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "General Sans Semibold";
+    src: url(./GeneralSans-Semibold.otf);
+}
+
+@font-face {
+    font-family: "General Sans";
+    src: url(./GeneralSans-Medium.otf);
+}
+
+@font-face {
+    font-family: "Lithic";
+    src: url(./Lithic.otf);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+
+html {
+    background-color: #f4f4f4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin: 2rem;
+    gap: 20px 60px;
+    grid-auto-flow: row;
+}
+
+.left {
+    overflow: hidden;
+    height: 85vh;
+    border-right: 1px solid #f252ff;
+    padding-right: 2rem;
+}
+
+.right {
+    height: 85vh;
+    overflow: scroll;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color:#f252ff;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:visited {
+    color:#f252ff;
+}
+
+.quote {
+    font-family: "Lithic", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color:#f252ff;
+}
+
+.quote2 {
+    font-family: "Lithic", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    color:#f252ff;
+}
+
+.italic {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+button {
+    text-decoration: none;
+    color: #f252ff;
+    border: 1px #f252ff solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #f4f4f4;
+    z-index: 1;
+    transition: .3s ease-in-out;
+    font-family: "General Sans Semibold", sans-serif;
+}
+
+button:hover {
+    color:#f4f4f4;
+    cursor: pointer;
+    background-color: #f252ff;
+}
+
+p {
+    font-size: 20px;
+    color: #f252ff;
+    text-align: left;
+    font-family: "General Sans"
+}
+
+.black {
+    color: black;
+}
+
+.pink {
+    color: #f252ff;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+hr {
+    border: .5px solid #f252ff;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.arrow {
+    color:#f252ff;
+}
+
+.right img {
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+
+#rich-mobile {
+    display: none;
+}
+
+marquee {
+    margin-top: .7rem;
+    width: 95%;
+    font-family: "Lithic", Arial, Helvetica, sans-serif;
+    color: #f252ff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.dot1 {
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .dot2 {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .dot3 {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .dot4 {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    width: 1rem;
+    height: auto;
+    object-fit: cover;
+    display: relative;
+    z-index: 2;
+  }
+
+  .cursor {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #f252ff;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  ::-webkit-scrollbar-track {
+    color: #f252ff;
+  }
+
+
+  /* smartphone */
+@media only screen and (max-width: 500px), (orientation: portrait) {
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 85vw;
+    }
+
+    .right {
+        overflow: visible;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+  
+    .left {
+        height: auto;
+        border-bottom: 0px;
+        border-right: 0px;
+
+    }
+
+    .cursor {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    };
+  
+    .left img {
+        display: none;
+    }
+
+    #rich {
+        display: none;
+    }
+
+    #rich-mobile {
+        display: block;
+        padding-top: 1rem;
+    }
+  }
