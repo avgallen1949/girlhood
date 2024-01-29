@@ -284,4 +284,8 @@ marquee {
     .left {
         border: 0px;
     }
+
+    script {
+        display: none;
+    }
   }
