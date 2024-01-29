@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.png">
+    
+    <title>girlhood redefined</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="./resources/reflect.css" type="text/css" />
+
+    <script src="cursor.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <marquee behavior="" direction="">
+        <span>Anyone who reflects on their practical experience is an intellectual, a creator of knowledge.</span>
+    </marquee>
+   <div class="grid">
+
+    <div class="left">
+
+        <div class="mirror">
+            <img src="./resources/mirror.png">
+        </div>
+
+        <div>
+            <video autoplay="true" id="videoElement">
+            </video>
+        </div>
+
+        <div class="blur">
+            <img src="./resources/purple blur.png">
+        </div>
+        
+    </div>
+
+        <div class="right">
+            <p class="pink">Reflecting on the archive...</p>
+           <p class="pink2">What responses did you relate to the most?
+          <br><br>
+          Did any responses change how you viewed some of your own experiences?
+          <br><br>
+          If you could respond to one response - Which one would you pick? And what would you say?
+          </p>
+          <br>
+        <p class="pink3">
+          Think about these questions alone or talk about them with others! I'd love to read your reflections! If viewing this page as part of the exhibition, please fill out one of the slips and place into the container. If viewing online only, feel free to email them to avrie.world@gmail.com
+        </p>
+        </div>
+  
+        <!--Dots-->
+        <div>
+            <img class="dot1" src="./resources/dot.png">
+            <img class="dot2" src="./resources/dot.png">
+            <img class="dot3" src="./resources/dot.png">
+            <img class="dot4" src="./resources/dot.png">
+            </div>
+  <!--cursor-->
+  <div class="cursor"></div>
+
+        <script>
+        var video = document.querySelector("#videoElement");
+
+            if (navigator.mediaDevices.getUserMedia) {
+              navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                  video.srcObject = stream;
+                })
+                .catch(function (err0r) {
+                  console.log("Something went wrong!");
+                });
+            }
+            </script>
+</body>
+</html>
