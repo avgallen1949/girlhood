@@ -244,19 +244,19 @@ marquee {
     }
 
     .cursor {
-        display: none;
+        display: none !important;
     }
 
     .arrow {
-        display: none;
+        display: none !important;
     };
   
     #videoElement {
-        display: none;
+        display: none !important;
     }
 
     video {
-        display: none;
+        display: none !important;
     }
       
     .mirror img {
