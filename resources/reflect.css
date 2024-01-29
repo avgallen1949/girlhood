@@ -149,8 +149,11 @@ p {
 
 .pink3 {
     color: #f252ff;
-    text-transform: uppercase;
     font-size: 1rem;
+}
+
+hr {
+    border: .5px solid #f252ff;
 }
 
 
@@ -250,6 +253,7 @@ marquee {
     .arrow {
         display: none !important;
     };
+
   
     #videoElement {
         display: none !important;

@@ -91,6 +91,7 @@ button {
     z-index: 1;
     transition: .3s ease-in-out;
     font-family: "General Sans Semibold", sans-serif;
+    font-size: 1rem;
 }
 
 button:hover {
