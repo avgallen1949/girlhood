@@ -252,18 +252,13 @@ marquee {
     };
   
     #videoElement {
-        width: 13rem;
-        height: 15rem;
-        background-color: #b6b6b6;
-        border-radius: 50%;
-        z-index: 1;
-        transform: rotate(20deg);
-        display: inherit;
-        position: relative;
-        top: 1rem;
-        left: 5rem;
+        display: none;
     }
-    
+
+    video {
+        display: none;
+    }
+      
     .mirror img {
         position: absolute;
         width: 15rem;
