@@ -65,8 +65,8 @@ navigator.mediaDevices
   .getUserMedia({video: true, audio: false})
   .then((stream)=> {
     let v = document.getElementById("videoElement");
-    v.srcObject = stream;
-    v.play();
+    videoElement.srcObject = stream;
+    videoElement.play();
   });
             </script>
 </body>
