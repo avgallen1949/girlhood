@@ -240,6 +240,7 @@ marquee {
         overflow: visible;
         height: auto;
         padding-bottom: 2rem;
+        margin-top: -10rem;
     }
 
     .cursor {
@@ -250,7 +251,42 @@ marquee {
         display: none;
     };
   
-    .left, .mirror img, .blur img, #videoElement{
-        display: none;
+    #videoElement {
+        width: 13rem;
+        height: 15rem;
+        background-color: #b6b6b6;
+        border-radius: 50%;
+        z-index: 1;
+        transform: rotate(20deg);
+        display: inherit;
+        position: relative;
+        top: 1rem;
+        left: 5rem;
+    }
+    
+    .mirror img {
+        position: absolute;
+        width: 15rem;
+        height: auto;
+        display:inherit;
+        z-index: 2;
+        transform: rotate(20deg);
+        top: 5rem;
+        left: 4rem;
+        margin: auto;
+    }
+    
+    .blur img {
+        position: absolute;
+        width: 40rem;
+        height: auto;
+        display:inherit;
+        z-index: 0;
+        top: 1rem;
+        left: -6rem;
+    }
+
+    .left {
+        border: 0px;
     }
   }
