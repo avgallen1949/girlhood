@@ -37,12 +37,12 @@ body {
     padding: 8px;
   }
 
-
   .grid {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 1rem;
+    font-size: .8rem;
   }
 
   .grid div {
@@ -62,6 +62,13 @@ section {
 .submit {
   position: fixed;
   top: 2rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.reflect {
+  position: fixed;
+  top: 6rem;
   right: 2rem;
   z-index: 2;
 }
@@ -126,12 +133,12 @@ section {
     z-index: 2;
   }
 
-  .prompts p {
+  .buttons p {
     font-size: 1rem;
     text-align: center;
   }
 
-  .prompts {
+  .buttons {
     margin-bottom: 3rem;
   }
 
@@ -209,22 +216,24 @@ section:hover::before {
   color: #f252ff;
 }
 
+.about2, .reflect2, .submit2 {
+  display: none;
+}
+
 /* smartphone */
 @media only screen and (max-width: 500px), (orientation: portrait) {
-  .about {
-    text-align: center;
-    width: 30%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+
+  .about, .reflect, .submit {
+    display: none;
   }
 
-  .submit {
-    text-align: center;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+  .about2, .reflect2, .submit2 {
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    justify-content: center;
   }
+  
 
   .grid {
     position: relative;
