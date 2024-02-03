@@ -25,6 +25,7 @@
 
 html {
     background-color: #f4f4f4;
+    color: #2b2b2b;
 }
 
 .grid {
@@ -108,7 +109,7 @@ p {
 }
 
 .black {
-    color: black;
+    color: #2b2b2b;
 }
 
 .pink {

@@ -1,6 +1,7 @@
 html {
     background-color: #f4f4f4;
     font-size: 16px;
+    color: #2b2b2b;
 }
 
 @font-face {
@@ -64,6 +65,7 @@ section {
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: center;
+  color: #2b2b2b;
 }
 
 .buttons div {
@@ -136,7 +138,7 @@ section {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #2b2b2b;
     border: 1px #f252ff solid;
     padding: 1rem;
     border-radius: 2rem;
